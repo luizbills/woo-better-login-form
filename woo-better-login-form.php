@@ -13,8 +13,8 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
-add_action( 'plugins_loaded', 'wooblf_check_init' );
-function wooblf_check_init () {
+add_action( 'plugins_loaded', 'wooblf_plugin_init' );
+function wooblf_plugin_init () {
 	load_plugin_textdomain( 'woo-better-login-form', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 	if ( ! function_exists( 'WC' ) ) {
