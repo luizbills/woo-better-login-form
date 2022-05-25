@@ -1,0 +1,4 @@
+# translation backups
+*.po~
+*.mo~
+*.pot~

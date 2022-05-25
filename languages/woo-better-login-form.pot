@@ -1,0 +1,55 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Better Login Form for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-25 20:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.2; wp-6.0\n"
+"X-Domain: woo-better-login-form"
+
+#: woo-better-login-form.php:66
+msgid "Already have an account?"
+msgstr ""
+
+#. Description of the plugin
+msgid "Better login and register forms for WooCommerce stores"
+msgstr ""
+
+#. Name of the plugin
+msgid "Better Login Form for WooCommerce"
+msgstr ""
+
+#: woo-better-login-form.php:58
+msgid "Don't have an account?"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://luizpb.com"
+msgstr ""
+
+#. Author of the plugin
+msgid "Luiz Bills"
+msgstr ""
+
+#: woo-better-login-form.php:59
+msgid "Register now"
+msgstr ""
+
+#: woo-better-login-form.php:67
+msgid "Sign in"
+msgstr ""
+
+#: woo-better-login-form.php:34
+msgid ""
+"The plugin Better Login Form for WooCommerce requires WooCommerce installed "
+"and activated."
+msgstr ""
