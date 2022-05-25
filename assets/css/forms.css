@@ -1,14 +1,14 @@
 body:not(.no-js) #customer_login .col-1,
 body:not(.no-js) #customer_login .col-2 {
-    display: none;
-    float: none;
-    width: 100%;
-    max-width: 36rem;
-    margin-left: auto;
-    margin-right: auto;
+  display: none;
+  float: none;
+  width: 100%;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body.no-js #signin-link,
 body.no-js #signup-link {
-    display: none;
+  display: none;
 }
