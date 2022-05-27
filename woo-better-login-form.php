@@ -31,13 +31,15 @@ function wooblf_plugin_init () {
 
 function wooblf_admin_notice_dependencies () {
 	$class = 'notice notice-error';
-	$message = esc_html__( 'The plugin Better Login Form for WooCommerce requires WooCommerce installed and activated.', 'woo-better-login-form' );
+	list( $plugin_name ) = \get_file_data( __FILE__, [ 'Plugin Name' ] );
+	$woocommerce_link = '<a target="_blank" href="https://wordpress.org/plugins/woocommerce/">WooCommerce</a>';
+	$message = esc_html__( '%s requires %s installed and activated.', 'woo-better-login-form' );
+	$message = sprintf( $message, '<strong>' . esc_html( $plugin_name ) . '</strong>', $woocommerce_link );
 	printf( '<div class="%1$s"><p>%2$s</p></div>', esc_attr( $class ), $message );
 }
 
 function wooblf_enqueue_scripts () {
-	if ( is_user_logged_in() ) return;
-	if ( ! is_account_page() ) return;
+	if ( is_user_logged_in() || ! is_account_page() ) return;
 
 	wp_enqueue_script(
 		'woo-better-login-form',
@@ -56,7 +58,7 @@ function wooblf_add_register_button () {
 	$text = esc_html__( "Don't have an account?", 'woo-better-login-form' );
 	$link = esc_html__( 'Register now', 'woo-better-login-form' );
 	?>
-	<p id="signup-link"><?= $text ?> <a href="#register"><?= $link ?></a></p>
+	<p id="register-link"><span><?= $text ?></span> <a href="#register"><?= $link ?></a></p>
 	<?php
 }
 
@@ -64,7 +66,7 @@ function wooblf_add_login_button () {
 	$text = esc_html__( "Already have an account?", 'woo-better-login-form' );
 	$link = esc_html__( 'Sign in', 'woo-better-login-form' );
 	?>
-	<p id="signin-link"><?= $text ?> <a href="#login"><?= $link ?></a></p>
+	<p id="login-link"><span><?= $text ?></span> <a href="#login"><?= $link ?></a></p>
 	<?php
 }
 
