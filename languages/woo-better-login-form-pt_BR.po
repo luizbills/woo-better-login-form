@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Better Login Form for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-25 19:57+0000\n"
-"PO-Revision-Date: 2022-05-25 20:05+0000\n"
+"PO-Revision-Date: 2022-05-27 13:43+0000\n"
 "Last-Translator: \n"
 "Language-Team: Português do Brasil\n"
 "Language: pt_BR\n"
@@ -14,6 +14,11 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.6.2; wp-6.0\n"
 "X-Domain: woo-better-login-form"
+
+#: woo-better-login-form.php:36
+#, php-format
+msgid "%s requires %s installed and activated."
+msgstr "%s precisa do %s instalado e ativado."
 
 #: woo-better-login-form.php:66
 msgid "Already have an account?"
@@ -46,11 +51,3 @@ msgstr "Cadastre-se agora"
 #: woo-better-login-form.php:67
 msgid "Sign in"
 msgstr "Faça login"
-
-#: woo-better-login-form.php:34
-msgid ""
-"The plugin Better Login Form for WooCommerce requires WooCommerce installed "
-"and activated."
-msgstr ""
-"O plugin Better Login Form for WooCommerce precisa que o WooCommerce esteja "
-"instalado e ativado."

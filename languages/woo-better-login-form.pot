@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Better Login Form for WooCommerce\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-25 20:05+0000\n"
+"POT-Creation-Date: 2022-05-27 13:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -15,6 +15,11 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.6.2; wp-6.0\n"
 "X-Domain: woo-better-login-form"
+
+#: woo-better-login-form.php:36
+#, php-format
+msgid "%s requires %s installed and activated."
+msgstr ""
 
 #: woo-better-login-form.php:66
 msgid "Already have an account?"
@@ -46,10 +51,4 @@ msgstr ""
 
 #: woo-better-login-form.php:67
 msgid "Sign in"
-msgstr ""
-
-#: woo-better-login-form.php:34
-msgid ""
-"The plugin Better Login Form for WooCommerce requires WooCommerce installed "
-"and activated."
 msgstr ""
