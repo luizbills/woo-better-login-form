@@ -8,7 +8,12 @@ body:not(.no-js) #customer_login .col-2 {
   margin-right: auto;
 }
 
-body.no-js #signin-link,
-body.no-js #signup-link {
+body.no-js #login-link,
+body.no-js #register-link {
   display: none;
+}
+
+#login-link,
+#register-link {
+  font-weight: bold;
 }
