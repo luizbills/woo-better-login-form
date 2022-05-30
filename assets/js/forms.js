@@ -4,7 +4,6 @@ window.addEventListener( 'DOMContentLoaded', (evt) => {
   const wrapper = document.querySelector('#customer_login');
   const login = wrapper.querySelector('.col-1');
   const register = wrapper.querySelector('.col-2');
-  let current = null;
 
   login.id = 'login';
   register.id = 'register';
@@ -13,14 +12,10 @@ window.addEventListener( 'DOMContentLoaded', (evt) => {
   window.addEventListener('hashchange', (evt) => toogleForms());
 
   function toogleForms (scroll = true ) {
-    if ( '#register' === window.location.hash  ) {
-      register.style.display = 'block';
-      login.style.display = 'none';
-      if (scroll) register.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      login.style.display = 'block';
-      register.style.display = 'none';
-      if (scroll) login.scrollIntoView({ behavior: 'smooth' });
-    }
+    const current = '#register' === window.location.hash ? register : login;
+    const other = login === current ? register : login;
+    current.style.display = 'block';
+    other.style.display = 'none';
+    if (scroll) current.scrollIntoView({ behavior: 'smooth' });
   }
 } );
