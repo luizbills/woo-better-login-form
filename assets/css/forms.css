@@ -8,6 +8,11 @@ body:not(.no-js) #customer_login .col-2 {
   margin-right: auto;
 }
 
+body:not(.no-js) #customer_login .col-1.active,
+body:not(.no-js) #customer_login .col-2.active {
+  display: block;
+}
+
 body.no-js #login-link,
 body.no-js #register-link {
   display: none;

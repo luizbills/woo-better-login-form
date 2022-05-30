@@ -12,10 +12,10 @@ window.addEventListener( 'DOMContentLoaded', (evt) => {
   window.addEventListener('hashchange', (evt) => toogleForms());
 
   function toogleForms (scroll = true ) {
-    const current = '#register' === window.location.hash ? register : login;
-    const other = login === current ? register : login;
-    current.style.display = 'block';
-    other.style.display = 'none';
-    if (scroll) current.scrollIntoView({ behavior: 'smooth' });
+    const active = ('#register' === window.location.hash) ? register : login;
+    const other = (login === active) ? register : login;
+    other.classList.remove('active')
+    active.classList.add('active')
+    if (scroll) active.scrollIntoView({ behavior: 'smooth' });
   }
 } );
