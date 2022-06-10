@@ -25,7 +25,7 @@ function wooblf_plugin_init () {
 		add_action( 'woocommerce_register_form_end', 'wooblf_add_login_button' );
 		add_action( 'wp_enqueue_scripts', 'wooblf_enqueue_scripts' );
 		add_filter( 'body_class', 'wooblf_body_class' );
-		add_filter( 'option_woocommerce_enable_myaccount_registration', 'wooblf_enable_myaccount_registration' );
+		add_filter( 'option_woocommerce_enable_myaccount_registration', 'wooblf_return_yes_string' );
 	}
 }
 
@@ -75,7 +75,6 @@ function wooblf_body_class ( $classes ) {
 	return $classes;
 }
 
-function wooblf_enable_myaccount_registration ( $value ) {
+function wooblf_return_yes_string () {
 	return 'yes';
 }
-
