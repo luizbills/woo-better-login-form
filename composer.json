@@ -1,0 +1,11 @@
+{
+	"require": {
+		"php": "^7.3"
+	},
+	"require-dev": {},
+	"scripts": {
+		"deploy": "/usr/bin/env bash ./scripts/deploy",
+		"build": "/usr/bin/env bash ./scripts/build",
+		"make-pot": "wp i18n make-pot . languages/woo-better-login-form.pot"
+	}
+}
