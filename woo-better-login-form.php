@@ -39,19 +39,19 @@ function wooblf_admin_notice_dependencies () {
 }
 
 function wooblf_enqueue_scripts () {
-	if ( is_user_logged_in() || ! is_account_page() ) return;
-
-	wp_enqueue_script(
-		'woo-better-login-form',
-		plugins_url( 'assets/js/forms.js', __FILE__ ),
-		false,
-		false,
-		true
-	);
-	wp_enqueue_style(
-		'woo-better-login-form',
-		plugins_url( 'assets/css/forms.css', __FILE__ ),
-	);
+	if ( ! is_user_logged_in() && is_account_page() ) {
+		wp_enqueue_script(
+			'woo-better-login-form',
+			plugins_url( 'assets/js/forms.js', __FILE__ ),
+			false,
+			false,
+			true
+		);
+		wp_enqueue_style(
+			'woo-better-login-form',
+			plugins_url( 'assets/css/forms.css', __FILE__ ),
+		);
+	}
 }
 
 function wooblf_add_register_button () {
@@ -74,16 +74,19 @@ function wooblf_add_login_button () {
 
 function wooblf_get_login_url () {
 	$url = '#login';
-	return $url; 
+	return $url;
 }
 
 function wooblf_get_register_url () {
 	$url = '#register';
-	return $url; 
+	return $url;
 }
 
 function wooblf_body_class ( $classes ) {
-	$classes[] = 'no-js'; // to detect javascript
+	if ( ! is_user_logged_in() && is_account_page() ) {
+		$classes[] = 'no-js'; // to detect javascript
+		$classes[] = 'wc-better-login';
+	}
 	return $classes;
 }
 

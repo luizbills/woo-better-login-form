@@ -13,6 +13,7 @@ body:not(.no-js) #customer_login .col-2.active {
   display: block;
 }
 
+body.wc-better-login h1,
 body.no-js #login-link,
 body.no-js #register-link {
   display: none;
