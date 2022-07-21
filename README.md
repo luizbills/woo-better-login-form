@@ -1,6 +1,10 @@
-# woo-better-login-form
+# Better Login Form for WooCommerce
 
 Improve the WooCommerce My Account page for non logged customers
+
+## Download
+
+Download the lastest version: https://github.com/luizbills/woo-better-login-form/releases/download/0.1.0/woo-better-login-form.zip
 
 ## Demo
 
