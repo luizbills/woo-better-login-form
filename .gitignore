@@ -1,4 +1,6 @@
 # translation backups
-*.po~
-*.mo~
-*.pot~
+/wp-build/
+/vendor/
+/node_modules/
+*.min.js
+*.min.css
