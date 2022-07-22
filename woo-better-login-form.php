@@ -4,7 +4,7 @@ Plugin Name: Better Login Form for WooCommerce
 Version: 0.1.0
 Description: Better login and register forms for WooCommerce stores
 Author: Luiz Bills
-Author URI: https://luizpb.com
+Author URI: https://luizpb.com/en
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: woo-better-login-form
